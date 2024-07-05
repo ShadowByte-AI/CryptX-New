@@ -118,6 +118,26 @@
   margin: 20rem auto 3rem;
   padding: 16px;
 }
+
+@media (max-width:400px){
+    #cards{
+  display:none;
+  grid-template-columns: repeat(1,min-content);
+  gap: 16px;
+  flex-wrap:wrap;
+  max-width: 66%;
+  margin: 20rem auto 3rem;
+  padding: 16px;
+}
+.hero-text .sub-text h1{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+.hero-text .brand h2 {
+    font-size: 5rem;
+}
+}
 #cards:hover > .card:before {
   opacity: 1;
   transition-delay: 0.1s;
