@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-section">
+        <div class="spline-container">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.9/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/MYFCwJJeWehgFmOr/scene.splinecode"></spline-viewer>
+        </div>
+        <div class="hero-text">
+            <div class="brand"><h2 class="metal-text">CryptX</h2></div>  
+            <div class="sub-text"><h1>Your Partner to Revolutionise Web3</h1></div>          
+        </div>
+    </div>
+    <div class="gradient-transition"></div>
+<style>
+.gradient-transition {
+    /* Set a linear gradient background */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    /* Set height to fill the entire viewport */
+    height: 20vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 3;
+    top:85%;    
+    /* Optional: Center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Optional: Text style for visibility */
+}
+</style>
+
+<div class="glow-img-wrapper">
+    <div class="section_glow-image-wrapper"><img src="https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg.png" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg-p-500.png 500w, https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg-p-800.png 800w, https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg-p-1080.png 1080w, https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg-p-1600.png 1600w, https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg-p-2000.png 2000w, https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg.png 2880w" alt="" class="section_glow-image is-align-top-left"></div>
+</div>
+
+
+    <style>
+        .glow-img-wrapper{
+            position: relative;
+            margin-top: 10rem;
+        }
+            .section_glow-image-wrapper {
+    width: 100vw;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    }
+    
+    .section_glow-image.is-align-top-left {
+    margin-left: -25%;
+    transform: rotate(180deg);
+    }
+        </style>
+
+
+
+
+    <div class="services">
+        <div id="cards">
+            <div class="card">
+              <div class="card-content">
+              
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content"></div>
+            </div>
+            <div class="card">
+              <div class="card-content"></div>
+            </div>
+            <div class="card">
+              <div class="card-content"></div>
+            </div>
+          </div>
+    </div>
+<style>
+    :root{
+  --background: rgb(20,20,20);
+  --background-card-content: rgb(7, 7, 7);
+  --ratio-x: .5;
+  --ratio-y: .75;
+  --light-size: 300px;
+}
+/* body{    
+  background-color: var(--background);
+  font-family: sans-serif;
+  display: flex;
+} */
+#cards{
+  display:grid;
+  grid-template-columns: repeat(3,min-content);
+  gap: 16px;
+  flex-wrap:wrap;
+  max-width: 66%;
+  margin: 20rem auto 3rem;
+  padding: 16px;
+}
+#cards:hover > .card:before {
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+#cards:hover > .card:after {
+  opacity: .925;
+  transition-delay: 0s;
+}
+
+.card {
+  position: relative;
+  background-color: rgba(33,33,33,1);
+  border-radius:10px;
+  cursor: pointer;
+  height:260px;
+  width:300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  image-rendering: pixelate;
+}
+
+.card:before,
+.card:after {
+  transition: opacity 500ms ease;
+  image-rendering: pixelate;
+}
+
+.card:after {
+  
+  --bgoffsetx: calc( 3px * var(--ratio-x)); 
+  --bgoffsety: calc( 3px * var(--ratio-y));
+  --pointerx: calc( 100% * var(--ratio-x));
+  --pointery: calc( 100% * var(--ratio-y));
+  
+  background-color: var(--background-card-content);
+  background-image: 
+    radial-gradient(var(--light-size) circle at var(--pointerx) var(--pointery), rgba(0,0,0,0.75),black),
+    radial-gradient(var(--light-size) circle at var(--pointerx) var(--pointery), #252525cc, rgb(16, 16, 16) calc(var(--light-size) * 1)), 
+    var(--glitter2), 
+    var(--glitter2);
+  background-position: center, center, center, calc(var(--bgoffsetx)*1) calc(var(--bgoffsety)*1);
+  background-size: 300px 300px;
+  background-blend-mode: normal, color-burn, color-dodge;
+  filter: brightness(1.4) contrast(.725);
+
+  opacity: 0;
+  z-index: 2;
+  
+}
+.card:after {
+  
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius:9px;
+  height:calc(100% - 2px);
+  width:calc(100% - 2px);
+  transition-delay: 0.1s;
+  z-index:2;
+  
+}
+
+.card:before {
+  
+  content: "";
+  background-color: rgba(255,255,255,0);
+  border-radius: inherit;
+  opacity:0;
+  width:100%;
+  height:100%;
+  position: absolute;
+  left:0px;
+  top:0px;
+}
+
+
+.card:before {
+  content: "";
+  background-image: 
+    conic-gradient(from 0deg at calc( 0% + var(--mouse-x) ) calc( 0% + var(--mouse-y) ), 
+      #FFBD8C 0%, #FD8585 11%, #FD8585 15%, #F882FF 27%, #F882FF 31%, #8785FE 42%, #8785FE 46%, #9AFCFF 55%, #9AFCFF 59%, #99FD9C 70%, #99FD9C 74%, #FFFD84 87%, #FFFD84 91%, #FFBD8C 100%), 
+    radial-gradient( calc(var(--light-size)*1.5) circle at var(--mouse-x) var(--mouse-y) , 
+      rgba(255,255,255,.7), rgba(0, 0, 0, .5) 50% ), 
+    radial-gradient( calc(var(--light-size)*1.5) circle at var(--mouse-x) var(--mouse-y) , 
+      transparent, rgb(33,22,44) 60%, var(--background) 120% );
+  background-blend-mode: hue, color-dodge;
+  transition-delay: 0s;
+  z-index: 1;
+}
+
+.card-content {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+
+
+
+
+
+
+.glitter {  
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+</style>
+
+<script>
+    
+document.body.style.setProperty( "--dw", document.body.clientWidth + "px" );
+document.body.style.setProperty( "--dh", document.body.clientHeight + "px" );
+document.getElementById("cards").onpointermove = e => {
+  for(const card of document.getElementsByClassName("card")) {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top; 
+    
+  card.style.setProperty("--mouse-x", `${x}px`);
+  card.style.setProperty("--mouse-y", `${y}px`);
+    
+  const BOX = card.getBoundingClientRect();
+  const POINT = { x: x, y: y };
+  const RATIO = { x: POINT.x / BOX.width, y: POINT.y / BOX.height };
+  const CENTER = fromCenter( RATIO );
+  // set some css variables referenced in css
+  card.style.setProperty( "--ratio-x", RATIO.x );
+  card.style.setProperty( "--ratio-y", RATIO.y );
+  }
+  
+}
+
+
+// maths 🤷‍♀️
+function fromCenter({ x, y }) {
+  return Math.min(Math.max( 0, Math.sqrt( (y - .5) * (y - .5) + (x  - .5) * (x - .5) ) / .5 ), 1 );
+}
+</script>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var logoLink = document.getElementById('logo');
+            console.log(logoLink);
+        });
+</script>
+</body>
+</html>
